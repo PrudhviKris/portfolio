@@ -4,14 +4,14 @@ export default {
   theme: {
     extend: {
       colors: {
-        base: '#0b1120',
-        ink: '#e2e8f0',
-        accent: '#22c55e',
-        accent2: '#38bdf8',
-        card: '#111827',
+        base: '#0c0c10',
+        ink: '#f3f4f6',
+        accent: '#b91c1c',
+        accent2: '#ef4444',
+        card: '#16161d',
       },
       boxShadow: {
-        glow: '0 0 0 1px rgba(34,197,94,0.12), 0 20px 60px rgba(56,189,248,0.12)',
+        glow: '0 0 0 1px rgba(185,28,28,0.18), 0 20px 60px rgba(239,68,68,0.18)',
       },
     },
   },
