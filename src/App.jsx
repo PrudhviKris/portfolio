@@ -11,7 +11,7 @@ import { portfolioData } from './data/portfolioData'
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-base text-ink">
+    <div className="min-h-screen bg-gradient-to-b from-[#0c0c10] via-[#111116] to-[#1a0d10] text-ink">
       <Header />
       <main>
         <Hero data={portfolioData} />
