@@ -1,6 +1,7 @@
 import Header from './components/Header'
 import Hero from './components/Hero'
 import About from './components/About'
+import Certificates from './components/Certificates'
 import Skills from './components/Skills'
 import Projects from './components/Projects'
 import Experience from './components/Experience'
@@ -17,10 +18,8 @@ export default function App() {
         <About data={portfolioData} />
         <Skills skills={portfolioData.skills} />
         <Projects projects={portfolioData.projects} />
-        <Experience
-          experience={portfolioData.experience}
-          certifications={portfolioData.certifications}
-        />
+        <Experience experience={portfolioData.experience} />
+        <Certificates certifications={portfolioData.certifications} />
         <Contact data={portfolioData} />
       </main>
       <Footer />

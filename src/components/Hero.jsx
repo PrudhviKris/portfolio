@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { ArrowRight, Download, Github, Linkedin, Mail } from 'lucide-react'
+import { ArrowRight, Mail, Code2, Globe, Download, UserRound } from 'lucide-react'
 
 export default function Hero({ data }) {
   return (
@@ -14,25 +14,69 @@ export default function Hero({ data }) {
           <span className="inline-flex rounded-full border border-accent/30 bg-accent/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.28em] text-accent">
             Fresher Portfolio
           </span>
+
           <h1 className="mt-6 text-5xl font-black leading-tight text-white md:text-7xl">
             {data.name}
           </h1>
-          <p className="mt-4 max-w-2xl text-xl font-semibold text-slate-200 md:text-2xl">{data.role}</p>
-          <p className="mt-6 max-w-2xl text-base leading-8 text-slate-300">{data.summary}</p>
+
+          <p className="mt-4 max-w-2xl text-xl font-semibold text-slate-200 md:text-2xl">
+            {data.role}
+          </p>
+
+          <p className="mt-6 max-w-2xl text-base leading-8 text-slate-300">
+            {data.summary}
+          </p>
 
           <div className="mt-8 flex flex-wrap gap-4">
-            <a href="#projects" className="inline-flex items-center gap-2 rounded-2xl bg-accent px-6 py-3 font-semibold text-slate-950 transition hover:translate-y-[-2px] hover:bg-green-400">
+            <a
+              href="#projects"
+              className="inline-flex items-center gap-2 rounded-2xl bg-accent px-6 py-3 font-semibold text-slate-950 transition hover:translate-y-[-2px] hover:bg-green-400"
+            >
               View Projects <ArrowRight size={18} />
             </a>
-            <a href={`mailto:${data.email}`} className="inline-flex items-center gap-2 rounded-2xl border border-white/15 bg-white/5 px-6 py-3 font-semibold text-white transition hover:bg-white/10">
+
+            <a
+              href={`mailto:${data.email}`}
+              className="inline-flex items-center gap-2 rounded-2xl border border-white/15 bg-white/5 px-6 py-3 font-semibold text-white transition hover:bg-white/10"
+            >
               Contact Me <Mail size={18} />
             </a>
           </div>
 
           <div className="mt-8 flex flex-wrap gap-4 text-sm text-slate-300">
-            <a href={data.github} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 hover:text-white"><Github size={18} /> GitHub</a>
-            <a href={data.linkedin} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 hover:text-white"><Linkedin size={18} /> LinkedIn</a>
-            <a href={`mailto:${data.email}`} className="inline-flex items-center gap-2 hover:text-white"><Download size={18} /> Resume Contact</a>
+            <a
+              href={data.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 hover:text-white"
+            >
+              <Code2 size={18} /> GitHub
+            </a>
+
+            <a
+              href={data.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 hover:text-white"
+            >
+              <UserRound size={18} /> LinkedIn
+            </a>
+
+            <a
+              href={data.website || '#contact'}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 hover:text-white"
+            >
+              <Globe size={18} /> Portfolio
+            </a>
+
+            <a
+              href={`mailto:${data.email}`}
+              className="inline-flex items-center gap-2 hover:text-white"
+            >
+              <Download size={18} /> Resume Contact
+            </a>
           </div>
         </motion.div>
 
@@ -49,10 +93,12 @@ export default function Hero({ data }) {
                 <p className="text-sm text-slate-400">Focus Area</p>
                 <p className="mt-2 text-lg font-semibold text-white">AI/ML + Full Stack</p>
               </div>
+
               <div className="rounded-2xl border border-white/10 bg-white/5 p-5">
                 <p className="text-sm text-slate-400">Education</p>
                 <p className="mt-2 text-lg font-semibold text-white">B.Tech CSE (AI)</p>
               </div>
+
               <div className="rounded-2xl border border-white/10 bg-white/5 p-5 sm:col-span-2">
                 <p className="text-sm text-slate-400">Highlights</p>
                 <ul className="mt-3 space-y-3 text-sm text-slate-300">

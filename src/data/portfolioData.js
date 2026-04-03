@@ -6,7 +6,7 @@ export const portfolioData = {
   linkedin: 'https://linkedin.com/in/miriyala-prudhvi-krishna',
   github: 'https://github.com/PrudhviKris',
   summary:
-    'Aspiring AI/ML Engineer and Full-Stack Developer with experience in building AI-driven applications, optimizing deep learning models, and leveraging cloud technologies for scalable solutions. Skilled in Python, TensorFlow, React.js, and SQL, with a strong interest in NLP, computer vision, and AI automation.',
+    'Aspiring AI/ML Engineer and Python Developer with experience in building AI-driven applications, optimizing deep learning models, and leveraging cloud technologies for scalable solutions. Skilled in Python, TensorFlow, React.js, and SQL, with a strong interest in NLP, computer vision, and AI automation.',
 
   education: {
     college: 'Sri Venkateswara University',
@@ -18,10 +18,10 @@ export const portfolioData = {
 
   skills: {
     programming: ['Python', 'C', 'C++', 'Java'],
+    ai: ['PyTorch', 'TensorFlow', 'OpenCV', 'NLTK', 'ANN', 'CNN', 'RNN', 'GAN', 'LLM'],
     databases: ['MySQL', 'ANSI SQL', 'MongoDB', 'NoSQL'],
     web: ['HTML', 'CSS', 'JavaScript', 'React.js', 'Node.js'],
-    tools: ['GitHub', 'PyTorch', 'LeetCode', 'VS Code', 'Android Studio'],
-    ai: ['PyTorch', 'TensorFlow', 'OpenCV', 'NLTK', 'ANN', 'CNN', 'RNN', 'GAN', 'LLM'],
+    tools: ['GitHub', 'PyTorch', 'Jupyter Notebook', 'VS Code', 'Android Studio'],
   },
 
   projects: [
@@ -50,7 +50,7 @@ export const portfolioData = {
     },
     {
       title: 'Student Performance Analytics Dashboard',
-      period: 'New Portfolio Project',
+      period: 'May 2025',
       stack: 'Python, Pandas, SQL, Power BI / React Dashboard',
       type: 'Data Analytics Project',
       points: [
@@ -61,7 +61,7 @@ export const portfolioData = {
     },
     {
       title: 'Phishing URL Detection System',
-      period: 'New Portfolio Project',
+      period: 'March 2025',
       stack: 'Python, Scikit-learn, Flask/React, Cybersecurity Features',
       type: 'Cyber Security Project',
       points: [
@@ -86,9 +86,36 @@ export const portfolioData = {
   },
 
   certifications: [
-    'Introduction to Internet of Things – NPTEL',
-    'Cloud Computing – NPTEL',
-    'Blockchain and Its Applications – NPTEL',
-    'GATE 2026 - Data Science and Artificial Intelligence – IIT Guwahati',
-  ],
+  {
+    id: 'ibm-python-data-science',
+    title: 'Python for Data Science – IBM',
+    link: 'https://drive.google.com/file/d/1Cs3BQ4h3aXTxRfBKJYxp7ON54mQc11AF/view?usp=drive_link',
+    featured: true,
+  },
+  {
+    id: 'gate-2026-dsai-iit-guwahati',
+    title: 'GATE 2026 - Data Science and Artificial Intelligence – IIT Guwahati',
+    link: 'https://drive.google.com/file/d/1MBtjLLYcGmVKT2GSU0Q1YMQv1GdfO5r6/view?usp=drive_link',
+    featured: true,
+  },
+  {
+    id: 'nptel-iot',
+    title: 'Introduction to Internet of Things – NPTEL',
+    link: 'https://drive.google.com/file/d/1lhBs5zQm40Jkunoi2bQyWXcLX5YlBSBg/view?usp=drive_link',
+    featured: false,
+  },
+  {
+    id: 'nptel-cloud-computing',
+    title: 'Cloud Computing – NPTEL',
+    link: 'https://drive.google.com/file/d/1pUI5A4t-xpurbWzsk0HWQhEIZskBPj9T/view?usp=drive_link',
+    featured: false,
+  },
+  {
+    id: 'nptel-blockchain-applications',
+    title: 'Blockchain and Its Applications – NPTEL',
+    link: 'https://drive.google.com/file/d/1rZrqM_O_6Jbn0q61QyJwCed_3fYj0rt4/view?usp=drive_link',
+    featured: false,
+  },
+  
+]
 }

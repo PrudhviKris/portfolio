@@ -4,7 +4,7 @@ import SectionTitle from './SectionTitle'
 export default function About({ data }) {
   return (
     <section id="about" className="mx-auto max-w-6xl px-6 py-20">
-      <SectionTitle eyebrow="About" title="Career profile" subtitle="A fresher portfolio crafted to present technical depth, project credibility, and readiness for software and AI/ML roles." />
+      <SectionTitle eyebrow="About" title="Career profile" subtitle="Building Intelligent Systems: From React Interfaces to Neural Networks." />
       <div className="grid gap-6 lg:grid-cols-[1.2fr_0.8fr]">
         <motion.div
           initial={{ opacity: 0, y: 24 }}

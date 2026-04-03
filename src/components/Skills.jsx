@@ -12,7 +12,7 @@ export default function Skills({ skills }) {
 
   return (
     <section id="skills" className="mx-auto max-w-6xl px-6 py-20">
-      <SectionTitle eyebrow="Skills" title="Technical toolkit" subtitle="Grouped skill cards make the portfolio easy to scan for recruiters, interviewers, and hiring managers." />
+      <SectionTitle eyebrow="Skills" title="Technical Toolkit" subtitle="Grouped skill cards make the portfolio easy to scan for recruiters, interviewers, and hiring managers." />
       <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
         {groups.map(([title, items], index) => (
           <motion.article

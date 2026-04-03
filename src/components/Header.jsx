@@ -1,4 +1,4 @@
-import { Menu, X } from 'lucide-react'
+import { Menu, X, Download } from 'lucide-react'
 import { useState } from 'react'
 
 const links = [
@@ -20,17 +20,32 @@ export default function Header() {
             PK
           </span>
           <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-slate-300">Portfolio</p>
+            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-slate-300">
+              Portfolio
+            </p>
             <p className="text-base font-semibold">Prudhvi Krishna</p>
           </div>
         </a>
 
         <nav className="hidden items-center gap-8 md:flex">
           {links.map((link) => (
-            <a key={link.href} href={link.href} className="text-sm text-slate-300 transition hover:text-white">
+            <a
+              key={link.href}
+              href={link.href}
+              className="text-sm text-slate-300 transition hover:text-white"
+            >
               {link.label}
             </a>
           ))}
+
+          <a
+            href="/PRUDHVIKRISHNA_Resume.pdf"
+            download="Prudhvi_Krishna_Resume.pdf"
+            className="inline-flex items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-4 py-2 text-sm font-medium text-white transition hover:bg-white/10"
+          >
+            <Download size={16} />
+            Resume
+          </a>
         </nav>
 
         <button
@@ -46,10 +61,25 @@ export default function Header() {
         <div className="border-t border-white/10 bg-slate-950/95 px-6 py-4 md:hidden">
           <div className="flex flex-col gap-4">
             {links.map((link) => (
-              <a key={link.href} href={link.href} className="text-sm text-slate-300" onClick={() => setOpen(false)}>
+              <a
+                key={link.href}
+                href={link.href}
+                className="text-sm text-slate-300"
+                onClick={() => setOpen(false)}
+              >
                 {link.label}
               </a>
             ))}
+
+            <a
+              href="/PRUDHVIKRISHNA_Resume.pdf"
+              download="Prudhvi_Krishna_Resume.pdf"
+              className="inline-flex w-fit items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-4 py-2 text-sm font-medium text-white transition hover:bg-white/10"
+              onClick={() => setOpen(false)}
+            >
+              <Download size={16} />
+              Download Resume
+            </a>
           </div>
         </div>
       )}
