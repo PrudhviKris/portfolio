@@ -3,15 +3,19 @@ import { ArrowRight, Mail, Code2, Globe, Download, UserRound } from 'lucide-reac
 
 export default function Hero({ data }) {
   return (
-    <section id="home" className="relative overflow-hidden px-6 pb-20 pt-16 md:pb-28 md:pt-24">
+    <section
+      id="home"
+      className="relative overflow-hidden px-6 pb-20 pt-16 md:pb-28 md:pt-24"
+    >
       <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top_right,rgba(34,197,94,0.18),transparent_28%),radial-gradient(circle_at_left,rgba(56,189,248,0.16),transparent_24%)]" />
+
       <div className="mx-auto grid max-w-6xl items-center gap-14 lg:grid-cols-[1.15fr_0.85fr]">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
         >
-          <span className="inline-flex rounded-full border border-accent/30 bg-accent/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.28em] text-accent">
+          <span className="inline-flex rounded-full border border-green-400/30 bg-green-400/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.28em] text-green-400">
             Fresher Portfolio
           </span>
 
@@ -30,7 +34,7 @@ export default function Hero({ data }) {
           <div className="mt-8 flex flex-wrap gap-4">
             <a
               href="#projects"
-              className="inline-flex items-center gap-2 rounded-2xl bg-accent px-6 py-3 font-semibold text-slate-950 transition hover:translate-y-[-2px] hover:bg-green-400"
+              className="inline-flex items-center gap-2 rounded-2xl bg-green-400 px-6 py-3 font-semibold text-slate-950 transition hover:-translate-y-0.5 hover:bg-green-300"
             >
               View Projects <ArrowRight size={18} />
             </a>
@@ -48,7 +52,7 @@ export default function Hero({ data }) {
               href={data.github}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 hover:text-white"
+              className="inline-flex items-center gap-2 transition hover:text-white"
             >
               <Code2 size={18} /> GitHub
             </a>
@@ -57,7 +61,7 @@ export default function Hero({ data }) {
               href={data.linkedin}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 hover:text-white"
+              className="inline-flex items-center gap-2 transition hover:text-white"
             >
               <UserRound size={18} /> LinkedIn
             </a>
@@ -66,16 +70,17 @@ export default function Hero({ data }) {
               href={data.website || '#contact'}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 hover:text-white"
+              className="inline-flex items-center gap-2 transition hover:text-white"
             >
               <Globe size={18} /> Portfolio
             </a>
 
             <a
-              href={`mailto:${data.email}`}
-              className="inline-flex items-center gap-2 hover:text-white"
+              href="/PRUDHVIKRISHNA_Resume.pdf"
+              download="Prudhvi_Krishna_Resume.pdf"
+              className="inline-flex items-center gap-2 transition hover:text-white"
             >
-              <Download size={18} /> Resume Contact
+              <Download size={18} /> Resume
             </a>
           </div>
         </motion.div>
@@ -86,17 +91,22 @@ export default function Hero({ data }) {
           transition={{ duration: 0.8, delay: 0.15 }}
           className="relative"
         >
-          <div className="absolute -inset-6 rounded-[2rem] bg-gradient-to-br from-accent/20 to-accent2/20 blur-3xl" />
-          <div className="relative rounded-[2rem] border border-white/10 bg-card p-8 shadow-glow">
+          <div className="absolute -inset-6 rounded-[2rem] bg-gradient-to-br from-green-400/20 to-sky-400/20 blur-3xl" />
+
+          <div className="relative rounded-[2rem] border border-white/10 bg-[#111827] p-8 shadow-[0_0_0_1px_rgba(34,197,94,0.12),0_20px_60px_rgba(56,189,248,0.12)]">
             <div className="grid gap-4 sm:grid-cols-2">
               <div className="rounded-2xl border border-white/10 bg-white/5 p-5">
                 <p className="text-sm text-slate-400">Focus Area</p>
-                <p className="mt-2 text-lg font-semibold text-white">AI/ML + Full Stack</p>
+                <p className="mt-2 text-lg font-semibold text-white">
+                  AI/ML + Full Stack
+                </p>
               </div>
 
               <div className="rounded-2xl border border-white/10 bg-white/5 p-5">
                 <p className="text-sm text-slate-400">Education</p>
-                <p className="mt-2 text-lg font-semibold text-white">B.Tech CSE (AI)</p>
+                <p className="mt-2 text-lg font-semibold text-white">
+                  B.Tech CSE (AI)
+                </p>
               </div>
 
               <div className="rounded-2xl border border-white/10 bg-white/5 p-5 sm:col-span-2">
